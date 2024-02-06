@@ -1,0 +1,62 @@
+.containerSearch {
+  height: 50px;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.logoicon {
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.query {
+  flex: 4;
+  height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.searchicon {
+  margin-left: 10px;
+  font-size: 10px, !important;
+}
+
+.searchquery {
+  width: 80%;
+  border: None;
+}
+
+.searchquery:focus {
+  outline: none;
+}
+
+.options {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.menu {
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  cursor: pointer;
+}

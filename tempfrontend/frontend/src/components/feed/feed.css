@@ -1,0 +1,10 @@
+.feedcontainer {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer {
+  width: 500px;
+  /* background-color: green; */
+}

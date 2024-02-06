@@ -27,10 +27,12 @@ export default function Searchbar({imgdata, onimgdatachange}) {
         },
         body: JSON.stringify({'query': inputVal}),
       };
-      await fetch("http://localhost:4000/api", options).then(response => response.json()).then(
-        data=> {
+      await fetch("http://localhost:4000/api", options).then(response => response.json())
+        .then(data=> {
           console.log("Got data:",data)
-          onimgdatachange({...imgdata, text: data.data})
+          const urls = JSON.parse(data.data)
+          console.log(`Got urls: ${urls}`)
+          onimgdatachange({...imgdata, text: urls})
         }).catch(error => {
             console.log("Error: ",error);
         })

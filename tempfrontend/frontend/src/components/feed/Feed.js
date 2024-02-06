@@ -12,13 +12,9 @@ export default function Feed({imgdata, onimgdatachange}) {
   return (
   <div className="feedcontainer">
       <div className="imageContainer">
-        <p>{imgdata.text}</p>
-        {
-        // <LoadImage srcLoc = {srctest} />
-        // <LoadImage srcLoc = {srctest2} />
-        // <LoadImage srcLoc = {srctest} />
-        // <LoadImage srcLoc = {srctest} />
-        }
+        <LoadImage srcLoc = {imgdata.text[0]} />
+        <LoadImage srcLoc = {imgdata.text[1]} />
+        <LoadImage srcLoc = {imgdata.text[2]} />
       </div>
   </div>
   )

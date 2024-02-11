@@ -1,1 +1,6 @@
-/.python-version
+.python-version
+spacyNER/model-best/vocab/vectors
+spacyNER/model-last/vocab/vectors
+.DS_Store
+spacyNER/.DS_Store
+spacyNER/model-best/.DS_Store

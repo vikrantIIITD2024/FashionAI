@@ -30,11 +30,15 @@ def main():
     loadAnnot("./test_annotations.json", "test_annot")
 
 def test():
-    prompt = input("Enter prompt")
+    prompt = input("Enter prompt: ")
     nlpner = spacy.load("./model-best")
     doc = nlpner(prompt)
     for ent in doc.ents:
         print(f'ent: {ent.text.strip()}, label: {ent.label_}')
 
 if __name__ == "__main__":
-    test()
+    ch = int(input("Enter test(1) or main(2): "))
+    if (ch == 1):
+        test()
+    else:
+        main()
